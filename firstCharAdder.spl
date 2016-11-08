@@ -1,0 +1,10 @@
+[Inputs]
+Inc
+rAddActive
+=adderNum[3:0]=
+=lastChar[7:0]=
+[Outputs]
+activeAdder
+carry
+=nextChar[7:0]=
+[BiDir]

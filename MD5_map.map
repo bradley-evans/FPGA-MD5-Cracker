@@ -1,0 +1,140 @@
+Release 14.7 Map P.20131013 (nt)
+Xilinx Map Application Log File for Design 'MD5'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off
+-c 100 -o MD5_map.ncd MD5.ngd MD5.pcf 
+Target Device  : xc3s200a
+Target Package : vq100
+Target Speed   : -4
+Mapper Version : spartan3a -- $Revision: 1.55 $
+Mapped Date    : Thu Nov 03 00:08:55 2016
+
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA8> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA9> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA10> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA11> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA12> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA13> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA14> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA15> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA16> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA17> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA18> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA19> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA20> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA21> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA22> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA23> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA24> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA25> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA26> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA27> on
+   block:<Mrom_b_rom00011>:<RAMB16BWE_RAMB16BWE>.
+ERROR:Pack:2309 - Too many bonded comps of type "IOB" found to fit this device.
+ERROR:Pack:18 - The design is too large for the given device and package. 
+   Please check the Design Summary section to see which resource requirement for
+   your design exceeds the resources available in the device.
+
+   NOTE: An NCD file will still be generated to allow you to examine the mapped
+   design.  This file is intended for evaluation use only, and will not process
+   successfully through PAR.
+
+   This mapped NCD file can be used to evaluate how the design's logic has been
+   mapped into FPGA logic resources.  It can also be used to analyze
+   preliminary, logic-level (pre-route) timing with one of the Xilinx static
+   timing analysis tools (TRCE or Timing Analyzer).
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      2
+Number of warnings:   28
+Logic Utilization:
+  Number of Slice Flip Flops:           660 out of   3,584   18%
+  Number of 4 input LUTs:             1,361 out of   3,584   37%
+Logic Distribution:
+  Number of occupied Slices:          1,063 out of   1,792   59%
+    Number of Slices containing only related logic:   1,063 out of   1,063 100%
+    Number of Slices containing unrelated logic:          0 out of   1,063   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       1,425 out of   3,584   39%
+    Number used as logic:             1,361
+    Number used as a route-thru:         64
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                645 out of      68  948% (OVERMAPPED)
+  Number of BUFGMUXs:                     1 out of      24    4%
+  Number of RAMB16BWEs:                   1 out of      16    6%
+
+Average Fanout of Non-Clock Nets:                2.57
+
+Peak Memory Usage:  212 MB
+Total REAL time to MAP completion:  3 secs 
+Total CPU time to MAP completion:   3 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "MD5_map.mrp" for details.
+Problem encountered during the packing phase.

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {../../Users/bevans/Desktop/FPGA MD5 Cracker Project Files (1)/setupWord.vhd} -prj MD5 -o setupWord.spl -module setupWord -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a setupWord.spl C:/xilinx/MD5/setupWord.sym 

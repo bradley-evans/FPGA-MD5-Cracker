@@ -1,0 +1,8 @@
+[Inputs]
+=UserHash[127:0]=
+=DrawX[9:0]=
+=DrawY[9:0]=
+[Outputs]
+draw_hash
+=curr_char[7:0]=
+[BiDir]

@@ -1,0 +1,5 @@
+[Inputs]
+=ActiveAdders[18:0]=
+[Outputs]
+=w14[31:0]=
+[BiDir]

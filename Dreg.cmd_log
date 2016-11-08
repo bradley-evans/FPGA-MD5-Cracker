@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {../../Users/bevans/Desktop/FPGA MD5 Cracker Project Files (1)/DReg.vhd} -prj MD5 -o Dreg.spl -module Dreg -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a Dreg.spl C:/xilinx/MD5/Dreg.sym 

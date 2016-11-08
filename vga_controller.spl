@@ -1,0 +1,12 @@
+[Inputs]
+clk
+reset
+[Outputs]
+hs
+vs
+pixel_clk
+blank
+sync
+=DrawX[9:0]=
+=DrawY[9:0]=
+[BiDir]

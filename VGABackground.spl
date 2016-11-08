@@ -1,0 +1,9 @@
+[Inputs]
+Found
+Run
+=DrawX[9:0]=
+=DrawY[9:0]=
+[Outputs]
+draw_back
+=curr_char[7:0]=
+[BiDir]

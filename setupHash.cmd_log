@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {../../Users/bevans/Desktop/FPGA MD5 Cracker Project Files (1)/setupHash.vhd} -prj MD5 -o setupHash.spl -module setupHash -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a setupHash.spl C:/xilinx/MD5/setupHash.sym 

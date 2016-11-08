@@ -1,0 +1,9 @@
+[Inputs]
+Clk
+Reset
+Shift_Enable
+Shift_R
+=Shift_In[3:0]=
+[Outputs]
+=Data_Out[127:0]=
+[BiDir]

@@ -1,0 +1,11 @@
+[Inputs]
+Clk
+Enable
+Reset
+=D[7:0]=
+[Outputs]
+Load
+Run
+Backspace
+=hexValue[3:0]=
+[BiDir]

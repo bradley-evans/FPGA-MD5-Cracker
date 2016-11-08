@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3a -refsym MD5_Toplevel_FPGA C:/Xilinx/MD5/MD5_Toplevel_FPGA.sch C:/xilinx/MD5/MD5_Toplevel_FPGA.sym 

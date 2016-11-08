@@ -1,0 +1,4 @@
+vhdtdtfi -lib work {../../Users/bevans/Desktop/FPGA MD5 Cracker Project Files (1)/UserHashReg.vhd} -prj MD5 -o UserHashReg.spl -module UserHashReg -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a UserHashReg.spl C:/xilinx/MD5/UserHashReg.sym 
+vhdtdtfi -lib work {../../Users/bevans/Desktop/FPGA MD5 Cracker Project Files (1)/UserHashReg.vhd} -prj MD5 -o UserHashReg.spl -module UserHashReg -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a UserHashReg.spl C:/xilinx/MD5/UserHashReg.sym 

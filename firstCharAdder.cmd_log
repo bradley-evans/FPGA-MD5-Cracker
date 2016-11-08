@@ -1,0 +1,4 @@
+vhdtdtfi -lib work {../../Users/bevans/Desktop/FPGA MD5 Cracker Project Files (1)/firstCharAdder.vhd} -prj MD5 -o firstCharAdder.spl -module firstCharAdder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a firstCharAdder.spl C:/xilinx/MD5/firstCharAdder.sym 
+vhdtdtfi -lib work {../../Users/bevans/Desktop/FPGA MD5 Cracker Project Files (1)/firstCharAdder.vhd} -prj MD5 -o firstCharAdder.spl -module firstCharAdder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a firstCharAdder.spl C:/xilinx/MD5/firstCharAdder.sym 

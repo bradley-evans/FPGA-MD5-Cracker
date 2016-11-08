@@ -1,0 +1,9 @@
+[Inputs]
+Clk
+Reset
+Shift_In
+Shift_En
+[Outputs]
+Detect_En
+=Data_Out[7:0]=
+[BiDir]

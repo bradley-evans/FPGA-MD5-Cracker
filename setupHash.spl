@@ -1,0 +1,8 @@
+[Inputs]
+=Hash_1[31:0]=
+=Hash_2[31:0]=
+=Hash_3[31:0]=
+=Hash_4[31:0]=
+[Outputs]
+=Hash_Out[127:0]=
+[BiDir]

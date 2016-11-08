@@ -1,0 +1,3 @@
+MODULE MD5_Toplevel_FPGA
+	SUBMODULE charAdder
+		INSTANCE XLXI_1

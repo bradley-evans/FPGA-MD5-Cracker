@@ -1,0 +1,9 @@
+[Inputs]
+clk
+Run
+Reset
+=MD5Hash[127:0]=
+=UserHash[127:0]=
+[Outputs]
+Found
+[BiDir]

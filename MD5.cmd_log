@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "C:/Xilinx/MD5/MD5.xst" -ofn "C:/Xilinx/MD5/MD5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200a-vq100-4 MD5.ngc MD5.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o MD5_map.ncd MD5.ngd MD5.pcf 
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o MD5_map.ncd MD5.ngd MD5.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/MD5/MD5.xst" -ofn "C:/Xilinx/MD5/MD5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200a-vq100-4 MD5.ngc MD5.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o MD5_map.ncd MD5.ngd MD5.pcf 
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o MD5_map.ncd MD5.ngd MD5.pcf 
+vhdtdtfi -lib work {../../Users/bevans/Desktop/FPGA MD5 Cracker Project Files (1)/MD5.vhd} -prj MD5 -o MD5.spl -module MD5 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a MD5.spl C:/xilinx/MD5/MD5.sym 
