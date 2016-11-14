@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="MD5_Crack">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2016-11-14T2:21:15</timestamp>
+    <pin polarity="Input" x="0" y="-352" name="AdderNum(3:0)" />
+    <pin polarity="Output" x="480" y="-352" name="w0_Out(31:0)" />
+    <pin polarity="Output" x="480" y="-304" name="w1_Out(31:0)" />
+    <pin polarity="Output" x="480" y="-208" name="w3_Out(31:0)" />
+    <pin polarity="Output" x="480" y="-256" name="w2_Out(31:0)" />
+    <pin polarity="Output" x="480" y="-160" name="w4_Out(31:0)" />
+    <pin polarity="Output" x="480" y="-112" name="Found" />
+    <pin polarity="Input" x="0" y="-304" name="Clk" />
+    <pin polarity="Input" x="0" y="-272" name="Run" />
+    <pin polarity="Input" x="0" y="-240" name="Reset" />
+    <pin polarity="Input" x="0" y="-208" name="UserHash(127:0)" />
+    <graph>
+        <rect width="352" x="64" y="-384" height="384" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="232" y="-392" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-352" type="pin AdderNum(3:0)" />
+        <rect width="64" x="0" y="-364" height="24" />
+        <line x2="0" y1="-352" y2="-352" x1="64" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-352" type="pin w0_Out(31:0)" />
+        <rect width="64" x="416" y="-364" height="24" />
+        <line x2="480" y1="-352" y2="-352" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-304" type="pin w1_Out(31:0)" />
+        <rect width="64" x="416" y="-316" height="24" />
+        <line x2="480" y1="-304" y2="-304" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-208" type="pin w3_Out(31:0)" />
+        <rect width="64" x="416" y="-220" height="24" />
+        <line x2="480" y1="-208" y2="-208" x1="416" />
+        <rect width="64" x="416" y="-268" height="24" />
+        <line x2="480" y1="-256" y2="-256" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-256" type="pin w2_Out(31:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-160" type="pin w4_Out(31:0)" />
+        <rect width="64" x="416" y="-172" height="24" />
+        <line x2="480" y1="-160" y2="-160" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-112" type="pin Found" />
+        <line x2="480" y1="-112" y2="-112" x1="416" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-304" type="pin Clk" />
+        <line x2="0" y1="-304" y2="-304" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-272" type="pin Run" />
+        <line x2="0" y1="-272" y2="-272" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-240" type="pin Reset" />
+        <line x2="0" y1="-240" y2="-240" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-208" type="pin UserHash(127:0)" />
+        <rect width="64" x="0" y="-220" height="24" />
+        <line x2="0" y1="-208" y2="-208" x1="64" />
+    </graph>
+</symbol>
