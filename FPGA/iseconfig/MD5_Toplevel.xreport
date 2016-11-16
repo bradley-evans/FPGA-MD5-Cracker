@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-11-14T22:07:37</DateModified>
+  <DateModified>2016-11-16T14:26:44</DateModified>
   <ModuleName>MD5_Toplevel</ModuleName>
-  <SummaryTimeStamp>2016-11-14T20:12:24</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/bevans/Desktop/FPGA-MD5-Cracker/FPGA/iseconfig/MD5_Toplevel_FPGA.xreport</SavedFilePath>
+  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SavedFilePath>C:/Users/bevans/Desktop/FPGA-MD5-Cracker/FPGA/iseconfig/MD5_Toplevel.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/bevans/Desktop/FPGA-MD5-Cracker/FPGA/xilinx/MD5\</ImplementationReportsDirectory>
-  <DateInitialized>2016-11-14T22:07:37</DateInitialized>
+  <DateInitialized>2016-11-16T13:33:43</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>
