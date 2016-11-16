@@ -22,7 +22,7 @@
         <signal name="XLXN_15(3:0)" />
         <signal name="XLXN_16(3:0)" />
         <signal name="XLXN_17(3:0)" />
-        <signal name="w0_out_net(31:0)" />
+        <signal name="XLXN_19(31:0)" />
         <signal name="XLXN_20(31:0)" />
         <signal name="XLXN_21(31:0)" />
         <signal name="XLXN_22(31:0)" />
@@ -102,7 +102,7 @@
             <line x2="480" y1="-480" y2="-480" x1="416" />
         </blockdef>
         <blockdef name="MD5_Crack">
-            <timestamp>2016-11-14T2:21:15</timestamp>
+            <timestamp>2016-11-14T7:43:32</timestamp>
             <rect width="352" x="64" y="-384" height="384" />
             <rect width="64" x="0" y="-364" height="24" />
             <line x2="0" y1="-352" y2="-352" x1="64" />
@@ -173,22 +173,13 @@
             <rect width="64" x="320" y="-332" height="24" />
             <line x2="384" y1="-320" y2="-320" x1="320" />
         </blockdef>
-        <blockdef name="gnd">
-            <timestamp>2000-1-1T10:10:10</timestamp>
-            <line x2="64" y1="-64" y2="-96" x1="64" />
-            <line x2="52" y1="-48" y2="-48" x1="76" />
-            <line x2="60" y1="-32" y2="-32" x1="68" />
-            <line x2="40" y1="-64" y2="-64" x1="88" />
-            <line x2="64" y1="-64" y2="-80" x1="64" />
-            <line x2="64" y1="-128" y2="-96" x1="64" />
-        </blockdef>
         <block symbolname="First_MD5_Crack" name="XLXI_2">
             <blockpin signalname="XLXN_1(3:0)" name="AdderNum(3:0)" />
             <blockpin signalname="run" name="Run" />
             <blockpin signalname="rst" name="Reset" />
             <blockpin signalname="clk" name="Clk" />
             <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
-            <blockpin signalname="w0_out_net(31:0)" name="w0_Out(31:0)" />
+            <blockpin signalname="XLXN_19(31:0)" name="w0_Out(31:0)" />
             <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
             <blockpin signalname="XLXN_21(31:0)" name="w2_Out(31:0)" />
             <blockpin signalname="XLXN_22(31:0)" name="w3_Out(31:0)" />
@@ -202,16 +193,16 @@
         </block>
         <block symbolname="MD5_Crack" name="XLXI_3">
             <blockpin signalname="XLXN_2(3:0)" name="AdderNum(3:0)" />
-            <blockpin signalname="w0_out_net(31:0)" name="w0_Out(31:0)" />
-            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
+            <blockpin signalname="rst" name="Reset" />
+            <blockpin signalname="clk" name="Clk" />
+            <blockpin signalname="run" name="Run" />
+            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="FoundBus(1)" name="Found" />
+            <blockpin signalname="XLXN_19(31:0)" name="w0_Out(31:0)" />
             <blockpin signalname="XLXN_22(31:0)" name="w3_Out(31:0)" />
             <blockpin signalname="XLXN_21(31:0)" name="w2_Out(31:0)" />
             <blockpin signalname="XLXN_23(31:0)" name="w4_Out(31:0)" />
-            <blockpin signalname="FoundBus(1)" name="Found" />
-            <blockpin signalname="clk" name="Clk" />
-            <blockpin signalname="run" name="Run" />
-            <blockpin signalname="rst" name="Reset" />
-            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
         </block>
         <block symbolname="FourbitAdder" name="XLXI_4">
             <blockpin signalname="XLXN_1(3:0)" name="inValue(3:0)" />
@@ -223,16 +214,16 @@
         </block>
         <block symbolname="MD5_Crack" name="XLXI_8">
             <blockpin signalname="XLXN_4(3:0)" name="AdderNum(3:0)" />
-            <blockpin signalname="w0_out_net(31:0)" name="w0_Out(31:0)" />
-            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
+            <blockpin signalname="rst" name="Reset" />
+            <blockpin signalname="clk" name="Clk" />
+            <blockpin signalname="run" name="Run" />
+            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="FoundBus(3)" name="Found" />
+            <blockpin signalname="XLXN_19(31:0)" name="w0_Out(31:0)" />
             <blockpin signalname="XLXN_22(31:0)" name="w3_Out(31:0)" />
             <blockpin signalname="XLXN_21(31:0)" name="w2_Out(31:0)" />
             <blockpin signalname="XLXN_23(31:0)" name="w4_Out(31:0)" />
-            <blockpin signalname="FoundBus(3)" name="Found" />
-            <blockpin signalname="clk" name="Clk" />
-            <blockpin signalname="run" name="Run" />
-            <blockpin signalname="rst" name="Reset" />
-            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
         </block>
         <block symbolname="FourbitAdder" name="XLXI_9">
             <blockpin signalname="XLXN_4(3:0)" name="inValue(3:0)" />
@@ -240,16 +231,16 @@
         </block>
         <block symbolname="MD5_Crack" name="XLXI_6">
             <blockpin signalname="XLXN_3(3:0)" name="AdderNum(3:0)" />
-            <blockpin signalname="w0_out_net(31:0)" name="w0_Out(31:0)" />
-            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
+            <blockpin signalname="rst" name="Reset" />
+            <blockpin signalname="clk" name="Clk" />
+            <blockpin signalname="run" name="Run" />
+            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="FoundBus(2)" name="Found" />
+            <blockpin signalname="XLXN_19(31:0)" name="w0_Out(31:0)" />
             <blockpin signalname="XLXN_22(31:0)" name="w3_Out(31:0)" />
             <blockpin signalname="XLXN_21(31:0)" name="w2_Out(31:0)" />
             <blockpin signalname="XLXN_23(31:0)" name="w4_Out(31:0)" />
-            <blockpin signalname="FoundBus(2)" name="Found" />
-            <blockpin signalname="clk" name="Clk" />
-            <blockpin signalname="run" name="Run" />
-            <blockpin signalname="rst" name="Reset" />
-            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
         </block>
         <block symbolname="FourbitAdder" name="XLXI_7">
             <blockpin signalname="XLXN_3(3:0)" name="inValue(3:0)" />
@@ -261,16 +252,16 @@
         </block>
         <block symbolname="MD5_Crack" name="XLXI_14">
             <blockpin signalname="XLXN_6(3:0)" name="AdderNum(3:0)" />
-            <blockpin signalname="w0_out_net(31:0)" name="w0_Out(31:0)" />
-            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
+            <blockpin signalname="rst" name="Reset" />
+            <blockpin signalname="clk" name="Clk" />
+            <blockpin signalname="run" name="Run" />
+            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="FoundBus(5)" name="Found" />
+            <blockpin signalname="XLXN_19(31:0)" name="w0_Out(31:0)" />
             <blockpin signalname="XLXN_22(31:0)" name="w3_Out(31:0)" />
             <blockpin signalname="XLXN_21(31:0)" name="w2_Out(31:0)" />
             <blockpin signalname="XLXN_23(31:0)" name="w4_Out(31:0)" />
-            <blockpin signalname="FoundBus(5)" name="Found" />
-            <blockpin signalname="clk" name="Clk" />
-            <blockpin signalname="run" name="Run" />
-            <blockpin signalname="rst" name="Reset" />
-            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
         </block>
         <block symbolname="FourbitAdder" name="XLXI_15">
             <blockpin signalname="XLXN_6(3:0)" name="inValue(3:0)" />
@@ -278,16 +269,16 @@
         </block>
         <block symbolname="MD5_Crack" name="XLXI_12">
             <blockpin signalname="XLXN_5(3:0)" name="AdderNum(3:0)" />
-            <blockpin signalname="w0_out_net(31:0)" name="w0_Out(31:0)" />
-            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
+            <blockpin signalname="rst" name="Reset" />
+            <blockpin signalname="clk" name="Clk" />
+            <blockpin signalname="run" name="Run" />
+            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="FoundBus(4)" name="Found" />
+            <blockpin signalname="XLXN_19(31:0)" name="w0_Out(31:0)" />
             <blockpin signalname="XLXN_22(31:0)" name="w3_Out(31:0)" />
             <blockpin signalname="XLXN_21(31:0)" name="w2_Out(31:0)" />
             <blockpin signalname="XLXN_23(31:0)" name="w4_Out(31:0)" />
-            <blockpin signalname="FoundBus(4)" name="Found" />
-            <blockpin signalname="clk" name="Clk" />
-            <blockpin signalname="run" name="Run" />
-            <blockpin signalname="rst" name="Reset" />
-            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
         </block>
         <block symbolname="FourbitAdder" name="XLXI_24">
             <blockpin signalname="XLXN_7(3:0)" name="inValue(3:0)" />
@@ -295,16 +286,16 @@
         </block>
         <block symbolname="MD5_Crack" name="XLXI_25">
             <blockpin signalname="XLXN_8(3:0)" name="AdderNum(3:0)" />
-            <blockpin signalname="w0_out_net(31:0)" name="w0_Out(31:0)" />
-            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
+            <blockpin signalname="rst" name="Reset" />
+            <blockpin signalname="clk" name="Clk" />
+            <blockpin signalname="run" name="Run" />
+            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="FoundBus(7)" name="Found" />
+            <blockpin signalname="XLXN_19(31:0)" name="w0_Out(31:0)" />
             <blockpin signalname="XLXN_22(31:0)" name="w3_Out(31:0)" />
             <blockpin signalname="XLXN_21(31:0)" name="w2_Out(31:0)" />
             <blockpin signalname="XLXN_23(31:0)" name="w4_Out(31:0)" />
-            <blockpin signalname="FoundBus(7)" name="Found" />
-            <blockpin signalname="clk" name="Clk" />
-            <blockpin signalname="run" name="Run" />
-            <blockpin signalname="rst" name="Reset" />
-            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
         </block>
         <block symbolname="FourbitAdder" name="XLXI_26">
             <blockpin signalname="XLXN_8(3:0)" name="inValue(3:0)" />
@@ -312,29 +303,29 @@
         </block>
         <block symbolname="MD5_Crack" name="XLXI_27">
             <blockpin signalname="XLXN_7(3:0)" name="AdderNum(3:0)" />
-            <blockpin signalname="w0_out_net(31:0)" name="w0_Out(31:0)" />
-            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
+            <blockpin signalname="rst" name="Reset" />
+            <blockpin signalname="clk" name="Clk" />
+            <blockpin signalname="run" name="Run" />
+            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="FoundBus(6)" name="Found" />
+            <blockpin signalname="XLXN_19(31:0)" name="w0_Out(31:0)" />
             <blockpin signalname="XLXN_22(31:0)" name="w3_Out(31:0)" />
             <blockpin signalname="XLXN_21(31:0)" name="w2_Out(31:0)" />
             <blockpin signalname="XLXN_23(31:0)" name="w4_Out(31:0)" />
-            <blockpin signalname="FoundBus(6)" name="Found" />
-            <blockpin signalname="clk" name="Clk" />
-            <blockpin signalname="run" name="Run" />
-            <blockpin signalname="rst" name="Reset" />
-            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
         </block>
         <block symbolname="MD5_Crack" name="XLXI_28">
             <blockpin signalname="XLXN_11(3:0)" name="AdderNum(3:0)" />
-            <blockpin signalname="w0_out_net(31:0)" name="w0_Out(31:0)" />
-            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
+            <blockpin signalname="rst" name="Reset" />
+            <blockpin signalname="clk" name="Clk" />
+            <blockpin signalname="run" name="Run" />
+            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="FoundBus(9)" name="Found" />
+            <blockpin signalname="XLXN_19(31:0)" name="w0_Out(31:0)" />
             <blockpin signalname="XLXN_22(31:0)" name="w3_Out(31:0)" />
             <blockpin signalname="XLXN_21(31:0)" name="w2_Out(31:0)" />
             <blockpin signalname="XLXN_23(31:0)" name="w4_Out(31:0)" />
-            <blockpin signalname="FoundBus(9)" name="Found" />
-            <blockpin signalname="clk" name="Clk" />
-            <blockpin signalname="run" name="Run" />
-            <blockpin signalname="rst" name="Reset" />
-            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
         </block>
         <block symbolname="FourbitAdder" name="XLXI_29">
             <blockpin signalname="XLXN_11(3:0)" name="inValue(3:0)" />
@@ -342,16 +333,16 @@
         </block>
         <block symbolname="MD5_Crack" name="XLXI_32">
             <blockpin signalname="XLXN_12(3:0)" name="AdderNum(3:0)" />
-            <blockpin signalname="w0_out_net(31:0)" name="w0_Out(31:0)" />
-            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
+            <blockpin signalname="rst" name="Reset" />
+            <blockpin signalname="clk" name="Clk" />
+            <blockpin signalname="run" name="Run" />
+            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="FoundBus(10)" name="Found" />
+            <blockpin signalname="XLXN_19(31:0)" name="w0_Out(31:0)" />
             <blockpin signalname="XLXN_22(31:0)" name="w3_Out(31:0)" />
             <blockpin signalname="XLXN_21(31:0)" name="w2_Out(31:0)" />
             <blockpin signalname="XLXN_23(31:0)" name="w4_Out(31:0)" />
-            <blockpin signalname="FoundBus(10)" name="Found" />
-            <blockpin signalname="clk" name="Clk" />
-            <blockpin signalname="run" name="Run" />
-            <blockpin signalname="rst" name="Reset" />
-            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
         </block>
         <block symbolname="FourbitAdder" name="XLXI_33">
             <blockpin signalname="XLXN_12(3:0)" name="inValue(3:0)" />
@@ -359,16 +350,16 @@
         </block>
         <block symbolname="MD5_Crack" name="XLXI_56">
             <blockpin signalname="XLXN_9(3:0)" name="AdderNum(3:0)" />
-            <blockpin signalname="w0_out_net(31:0)" name="w0_Out(31:0)" />
-            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
+            <blockpin signalname="rst" name="Reset" />
+            <blockpin signalname="clk" name="Clk" />
+            <blockpin signalname="run" name="Run" />
+            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="FoundBus(8)" name="Found" />
+            <blockpin signalname="XLXN_19(31:0)" name="w0_Out(31:0)" />
             <blockpin signalname="XLXN_22(31:0)" name="w3_Out(31:0)" />
             <blockpin signalname="XLXN_21(31:0)" name="w2_Out(31:0)" />
             <blockpin signalname="XLXN_23(31:0)" name="w4_Out(31:0)" />
-            <blockpin signalname="FoundBus(8)" name="Found" />
-            <blockpin signalname="clk" name="Clk" />
-            <blockpin signalname="run" name="Run" />
-            <blockpin signalname="rst" name="Reset" />
-            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
         </block>
         <block symbolname="FourbitAdder" name="XLXI_57">
             <blockpin signalname="XLXN_9(3:0)" name="inValue(3:0)" />
@@ -376,16 +367,16 @@
         </block>
         <block symbolname="MD5_Crack" name="XLXI_30">
             <blockpin signalname="XLXN_13(3:0)" name="AdderNum(3:0)" />
-            <blockpin signalname="w0_out_net(31:0)" name="w0_Out(31:0)" />
-            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
+            <blockpin signalname="rst" name="Reset" />
+            <blockpin signalname="clk" name="Clk" />
+            <blockpin signalname="run" name="Run" />
+            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="FoundBus(11)" name="Found" />
+            <blockpin signalname="XLXN_19(31:0)" name="w0_Out(31:0)" />
             <blockpin signalname="XLXN_22(31:0)" name="w3_Out(31:0)" />
             <blockpin signalname="XLXN_21(31:0)" name="w2_Out(31:0)" />
             <blockpin signalname="XLXN_23(31:0)" name="w4_Out(31:0)" />
-            <blockpin signalname="FoundBus(11)" name="Found" />
-            <blockpin signalname="clk" name="Clk" />
-            <blockpin signalname="run" name="Run" />
-            <blockpin signalname="rst" name="Reset" />
-            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
         </block>
         <block symbolname="FourbitAdder" name="XLXI_31">
             <blockpin signalname="XLXN_13(3:0)" name="inValue(3:0)" />
@@ -393,16 +384,16 @@
         </block>
         <block symbolname="MD5_Crack" name="XLXI_37">
             <blockpin signalname="XLXN_14(3:0)" name="AdderNum(3:0)" />
-            <blockpin signalname="w0_out_net(31:0)" name="w0_Out(31:0)" />
-            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
+            <blockpin signalname="rst" name="Reset" />
+            <blockpin signalname="clk" name="Clk" />
+            <blockpin signalname="run" name="Run" />
+            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="FoundBus(12)" name="Found" />
+            <blockpin signalname="XLXN_19(31:0)" name="w0_Out(31:0)" />
             <blockpin signalname="XLXN_22(31:0)" name="w3_Out(31:0)" />
             <blockpin signalname="XLXN_21(31:0)" name="w2_Out(31:0)" />
             <blockpin signalname="XLXN_23(31:0)" name="w4_Out(31:0)" />
-            <blockpin signalname="FoundBus(12)" name="Found" />
-            <blockpin signalname="clk" name="Clk" />
-            <blockpin signalname="run" name="Run" />
-            <blockpin signalname="rst" name="Reset" />
-            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
         </block>
         <block symbolname="FourbitAdder" name="XLXI_34">
             <blockpin signalname="XLXN_14(3:0)" name="inValue(3:0)" />
@@ -410,16 +401,16 @@
         </block>
         <block symbolname="MD5_Crack" name="XLXI_35">
             <blockpin signalname="XLXN_15(3:0)" name="AdderNum(3:0)" />
-            <blockpin signalname="w0_out_net(31:0)" name="w0_Out(31:0)" />
-            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
+            <blockpin signalname="rst" name="Reset" />
+            <blockpin signalname="clk" name="Clk" />
+            <blockpin signalname="run" name="Run" />
+            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="FoundBus(13)" name="Found" />
+            <blockpin signalname="XLXN_19(31:0)" name="w0_Out(31:0)" />
             <blockpin signalname="XLXN_22(31:0)" name="w3_Out(31:0)" />
             <blockpin signalname="XLXN_21(31:0)" name="w2_Out(31:0)" />
             <blockpin signalname="XLXN_23(31:0)" name="w4_Out(31:0)" />
-            <blockpin signalname="FoundBus(13)" name="Found" />
-            <blockpin signalname="clk" name="Clk" />
-            <blockpin signalname="run" name="Run" />
-            <blockpin signalname="rst" name="Reset" />
-            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
         </block>
         <block symbolname="FourbitAdder" name="XLXI_36">
             <blockpin signalname="XLXN_15(3:0)" name="inValue(3:0)" />
@@ -427,16 +418,16 @@
         </block>
         <block symbolname="MD5_Crack" name="XLXI_41">
             <blockpin signalname="XLXN_16(3:0)" name="AdderNum(3:0)" />
-            <blockpin signalname="w0_out_net(31:0)" name="w0_Out(31:0)" />
-            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
+            <blockpin signalname="rst" name="Reset" />
+            <blockpin signalname="clk" name="Clk" />
+            <blockpin signalname="run" name="Run" />
+            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="FoundBus(14)" name="Found" />
+            <blockpin signalname="XLXN_19(31:0)" name="w0_Out(31:0)" />
             <blockpin signalname="XLXN_22(31:0)" name="w3_Out(31:0)" />
             <blockpin signalname="XLXN_21(31:0)" name="w2_Out(31:0)" />
             <blockpin signalname="XLXN_23(31:0)" name="w4_Out(31:0)" />
-            <blockpin signalname="FoundBus(14)" name="Found" />
-            <blockpin signalname="clk" name="Clk" />
-            <blockpin signalname="run" name="Run" />
-            <blockpin signalname="rst" name="Reset" />
-            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
         </block>
         <block symbolname="FourbitAdder" name="XLXI_38">
             <blockpin signalname="XLXN_16(3:0)" name="inValue(3:0)" />
@@ -444,16 +435,16 @@
         </block>
         <block symbolname="MD5_Crack" name="XLXI_39">
             <blockpin signalname="XLXN_17(3:0)" name="AdderNum(3:0)" />
-            <blockpin signalname="w0_out_net(31:0)" name="w0_Out(31:0)" />
-            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
+            <blockpin signalname="rst" name="Reset" />
+            <blockpin signalname="clk" name="Clk" />
+            <blockpin signalname="run" name="Run" />
+            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="FoundBus(15)" name="Found" />
+            <blockpin signalname="XLXN_19(31:0)" name="w0_Out(31:0)" />
             <blockpin signalname="XLXN_22(31:0)" name="w3_Out(31:0)" />
             <blockpin signalname="XLXN_21(31:0)" name="w2_Out(31:0)" />
             <blockpin signalname="XLXN_23(31:0)" name="w4_Out(31:0)" />
-            <blockpin signalname="FoundBus(15)" name="Found" />
-            <blockpin signalname="clk" name="Clk" />
-            <blockpin signalname="run" name="Run" />
-            <blockpin signalname="rst" name="Reset" />
-            <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
+            <blockpin signalname="XLXN_20(31:0)" name="w1_Out(31:0)" />
         </block>
         <block symbolname="LargeOR" name="XLXI_70">
             <blockpin signalname="FoundBus(15:0)" name="FoundBus(15:0)" />
@@ -464,7 +455,7 @@
             <blockpin signalname="XLXN_22(31:0)" name="w3_0(31:0)" />
             <blockpin signalname="XLXN_21(31:0)" name="w2_0(31:0)" />
             <blockpin signalname="XLXN_20(31:0)" name="w1_0(31:0)" />
-            <blockpin signalname="w0_out_net(31:0)" name="w0_0(31:0)" />
+            <blockpin signalname="XLXN_19(31:0)" name="w0_0(31:0)" />
             <blockpin signalname="Found" name="Found" />
             <blockpin signalname="XLXN_66(31:0)" name="w4_1(31:0)" />
             <blockpin signalname="XLXN_67(31:0)" name="w3_1(31:0)" />
@@ -477,9 +468,6 @@
             <blockpin signalname="w3_out(31:0)" name="w3_out(31:0)" />
             <blockpin signalname="w4_out(31:0)" name="w4_out(31:0)" />
         </block>
-        <block symbolname="gnd" name="XLXI_73(3:0)">
-            <blockpin signalname="XLXN_1(3:0)" name="G" />
-        </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
         <instance x="2416" y="1104" name="XLXI_2" orien="R0">
@@ -488,8 +476,7 @@
         </instance>
         <branch name="XLXN_1(3:0)">
             <wire x2="2208" y1="432" y2="720" x1="2208" />
-            <wire x2="2224" y1="432" y2="432" x1="2208" />
-            <wire x2="2416" y1="432" y2="432" x1="2224" />
+            <wire x2="2416" y1="432" y2="432" x1="2208" />
         </branch>
         <branch name="XLXN_2(3:0)">
             <wire x2="2160" y1="1008" y2="1152" x1="2160" />
@@ -896,7 +883,7 @@
             <wire x2="4288" y1="608" y2="704" x1="4288" />
             <wire x2="4576" y1="608" y2="608" x1="4288" />
         </branch>
-        <branch name="w0_out_net(31:0)">
+        <branch name="XLXN_19(31:0)">
             <wire x2="2960" y1="2144" y2="2144" x1="2880" />
             <wire x2="2960" y1="2144" y2="2624" x1="2960" />
             <wire x2="2960" y1="2624" y2="3104" x1="2960" />
@@ -1127,6 +1114,5 @@
         <iomarker fontsize="28" x="1792" y="560" name="run" orien="R180" />
         <iomarker fontsize="28" x="1792" y="592" name="rst" orien="R180" />
         <iomarker fontsize="28" x="1792" y="624" name="UserHash(127:0)" orien="R180" />
-        <instance x="2096" y="368" name="XLXI_73(3:0)" orien="R90" />
     </sheet>
 </drawing>

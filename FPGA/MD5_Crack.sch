@@ -7,7 +7,6 @@
     </attr>
     <netlist>
         <signal name="XLXN_1(18:0)" />
-        <signal name="XLXN_2(18:0)" />
         <signal name="AdderNum(3:0)" />
         <signal name="XLXN_3(31:0)" />
         <signal name="XLXN_4(31:0)" />
@@ -15,35 +14,22 @@
         <signal name="XLXN_6(31:0)" />
         <signal name="XLXN_7(31:0)" />
         <signal name="XLXN_9(31:0)" />
-        <signal name="XLXN_10(31:0)" />
         <signal name="XLXN_11(31:0)" />
-        <signal name="XLXN_12(31:0)" />
         <signal name="XLXN_13(31:0)" />
-        <signal name="XLXN_14(31:0)" />
         <signal name="XLXN_15(31:0)" />
-        <signal name="XLXN_16(31:0)" />
         <signal name="XLXN_17(31:0)" />
-        <signal name="XLXN_18(31:0)" />
         <signal name="XLXN_8(31:0)" />
-        <signal name="XLXN_20" />
-        <signal name="XLXN_21" />
         <signal name="Reset" />
-        <signal name="XLXN_23" />
-        <signal name="XLXN_24" />
         <signal name="Clk" />
-        <signal name="XLXN_26" />
         <signal name="Run" />
         <signal name="XLXN_28" />
-        <signal name="XLXN_30" />
+        <signal name="XLXN_1337" />
         <signal name="XLXN_30(31:0)" />
         <signal name="XLXN_31(31:0)" />
         <signal name="XLXN_32(31:0)" />
         <signal name="XLXN_34(31:0)" />
         <signal name="UserHash(127:0)" />
-        <signal name="XLXN_35(127:0)" />
         <signal name="XLXN_41(127:0)" />
-        <signal name="XLXN_37(127:0)" />
-        <signal name="XLXN_48" />
         <signal name="Found" />
         <signal name="XLXN_143(31:0)" />
         <signal name="XLXN_144(31:0)" />
@@ -268,7 +254,7 @@
             <blockpin signalname="XLXN_13(31:0)" name="w2_in(31:0)" />
             <blockpin signalname="XLXN_15(31:0)" name="w1_in(31:0)" />
             <blockpin signalname="XLXN_17(31:0)" name="w0_in(31:0)" />
-            <blockpin signalname="XLXN_30" name="inc" />
+            <blockpin signalname="XLXN_1337" name="inc" />
             <blockpin signalname="AdderNum(3:0)" name="AdderNum(3:0)" />
             <blockpin signalname="XLXN_7(31:0)" name="w4(31:0)" />
             <blockpin signalname="XLXN_6(31:0)" name="w3(31:0)" />
@@ -302,7 +288,7 @@
             <blockpin signalname="XLXN_8(31:0)" name="w14_in(31:0)" />
             <blockpin signalname="Reset" name="Reset" />
             <blockpin signalname="Clk" name="Clk" />
-            <blockpin signalname="XLXN_30" name="Run" />
+            <blockpin signalname="XLXN_1337" name="Run" />
             <blockpin signalname="XLXN_28" name="Done" />
         </block>
         <block symbolname="Size" name="XLXI_3">
@@ -310,7 +296,7 @@
             <blockpin signalname="XLXN_8(31:0)" name="w14(31:0)" />
         </block>
         <block symbolname="MD5" name="XLXI_4">
-            <blockpin signalname="XLXN_30" name="Done" />
+            <blockpin signalname="XLXN_1337" name="Done" />
             <blockpin signalname="XLXN_17(31:0)" name="w0(31:0)" />
             <blockpin signalname="XLXN_15(31:0)" name="w1(31:0)" />
             <blockpin signalname="XLXN_13(31:0)" name="w2(31:0)" />
@@ -480,7 +466,7 @@
         <branch name="XLXN_28">
             <wire x2="2096" y1="1120" y2="1120" x1="1840" />
         </branch>
-        <branch name="XLXN_30">
+        <branch name="XLXN_1337">
             <wire x2="512" y1="1104" y2="1808" x1="512" />
             <wire x2="624" y1="1808" y2="1808" x1="512" />
             <wire x2="1392" y1="1104" y2="1104" x1="512" />
