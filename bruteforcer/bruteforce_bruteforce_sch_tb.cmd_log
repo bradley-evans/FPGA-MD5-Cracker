@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/bevans/Desktop/FPGA-MD5-Cracker/bruteforcer/bruteforce_bruteforce_sch_tb.xst" -ofn "C:/Users/bevans/Desktop/FPGA-MD5-Cracker/bruteforcer/bruteforce_bruteforce_sch_tb.syr" 

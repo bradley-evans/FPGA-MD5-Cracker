@@ -1,7 +1,0 @@
-update symbols MD5_Toplevel_FPGA
-add instance MD5_Toplevel 1504 1488 R0 -sn=1
-select figure at 1540 1392 8 -branches -sn=1
-delete selection -sn=1
-add instance MD5_Toplevel_FPGA 1600 1136 R0 -sn=1
-select figure at 1846 1344 8 -branches -sn=1
-delete selection -sn=1

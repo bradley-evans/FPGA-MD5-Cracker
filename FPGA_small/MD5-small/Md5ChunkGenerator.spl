@@ -1,0 +1,9 @@
+[Inputs]
+clk
+reset
+[Outputs]
+=chunk[511:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Md5ChunkGenerator
+

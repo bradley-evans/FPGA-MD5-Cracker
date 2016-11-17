@@ -1,0 +1,3 @@
+vhdl work "../../FPGA MD5 Cracker Project Files (1)/firstCharAdder.vhd"
+vhdl work "../../FPGA MD5 Cracker Project Files (1)/charAdder.vhd"
+vhdl work "bruteforce.vhf"

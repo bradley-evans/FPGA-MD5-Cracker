@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/bevans/Desktop/FPGA-MD5-Cracker/bruteforcer/bruteforce.xst" -ofn "C:/Users/bevans/Desktop/FPGA-MD5-Cracker/bruteforcer/bruteforce.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200a-vq100-4 bruteforce.ngc bruteforce.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o bruteforce_map.ncd bruteforce.ngd bruteforce.pcf 
+sch2sym -intstyle ise -family spartan3a -refsym bruteforce C:/Users/bevans/Desktop/FPGA-MD5-Cracker/bruteforcer/bruteforce.sch C:/Users/bevans/Desktop/FPGA-MD5-Cracker/bruteforcer/bruteforce.sym 
+sch2sym -intstyle ise -family spartan3a -w -refsym bruteforce C:/Users/bevans/Desktop/FPGA-MD5-Cracker/bruteforcer/bruteforce.sch C:/Users/bevans/Desktop/FPGA-MD5-Cracker/bruteforcer/bruteforce.sym 

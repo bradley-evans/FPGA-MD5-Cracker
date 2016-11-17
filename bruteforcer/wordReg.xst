@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/bevans/Desktop/FPGA-MD5-Cracker/bruteforcer/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/bevans/Desktop/FPGA-MD5-Cracker/bruteforcer/xst"
+elaborate
+-ifn wordReg.prj
+-ifmt mixed

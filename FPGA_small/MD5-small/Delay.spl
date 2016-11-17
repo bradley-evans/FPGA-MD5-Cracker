@@ -1,0 +1,9 @@
+[Inputs]
+clk
+active
+[Outputs]
+done
+[BiDir]
+[ATTRIBUTES]
+VeriModel Delay
+

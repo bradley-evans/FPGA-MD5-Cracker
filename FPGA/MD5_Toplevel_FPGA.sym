@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="MD5_Toplevel_FPGA">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2016-11-16T23:5:55</timestamp>
+    <timestamp>2016-11-17T2:31:26</timestamp>
     <pin polarity="Input" x="64" y="63" name="clk" />
     <pin polarity="Input" x="64" y="127" name="run" />
     <pin polarity="Input" x="64" y="191" name="rst" />
@@ -15,29 +15,29 @@
     <graph>
         <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="192" y="-8" type="symbol" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="63" type="pin clk" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="127" type="pin run" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="191" type="pin rst" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="255" type="pin UserHash(127:0)" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="63" type="pin Found" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="127" type="pin w0_out(31:0)" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="191" type="pin w1_out(31:0)" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="255" type="pin w2_out(31:0)" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="319" type="pin w3_out(31:0)" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="383" type="pin w4_out(31:0)" />
         <line x2="64" y1="63" y2="63" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="127" type="pin run" />
         <line x2="64" y1="127" y2="127" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="191" type="pin rst" />
         <line x2="64" y1="191" y2="191" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="255" type="pin UserHash(127:0)" />
         <rect width="0" x="64" y="243" height="24" />
         <line x2="64" y1="255" y2="255" x1="64" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="63" type="pin Found" />
         <line x2="320" y1="63" y2="63" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="127" type="pin w0_out(31:0)" />
         <rect width="0" x="320" y="115" height="24" />
         <line x2="320" y1="127" y2="127" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="191" type="pin w1_out(31:0)" />
         <rect width="0" x="320" y="179" height="24" />
         <line x2="320" y1="191" y2="191" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="255" type="pin w2_out(31:0)" />
         <rect width="0" x="320" y="243" height="24" />
         <line x2="320" y1="255" y2="255" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="319" type="pin w3_out(31:0)" />
         <rect width="0" x="320" y="307" height="24" />
         <line x2="320" y1="319" y2="319" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="383" type="pin w4_out(31:0)" />
         <rect width="0" x="320" y="371" height="24" />
         <line x2="320" y1="383" y2="383" x1="320" />
         <rect width="256" x="64" y="0" height="384" />

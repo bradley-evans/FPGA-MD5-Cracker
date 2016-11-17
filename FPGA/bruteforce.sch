@@ -6,55 +6,10 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="XLXN_15(7:0)" />
-        <signal name="XLXN_16(7:0)" />
-        <signal name="XLXN_20" />
-        <signal name="XLXN_21" />
-        <signal name="XLXN_22" />
-        <signal name="XLXN_43" />
-        <signal name="XLXN_42" />
-        <signal name="XLXN_41" />
-        <signal name="XLXN_171" />
-        <signal name="XLXN_172" />
-        <signal name="XLXN_173" />
-        <signal name="XLXN_188" />
-        <signal name="XLXN_189" />
-        <signal name="XLXN_190" />
-        <signal name="XLXN_248" />
-        <signal name="XLXN_250" />
-        <signal name="XLXN_252" />
-        <signal name="XLXN_254" />
-        <signal name="XLXN_256" />
-        <signal name="XLXN_268" />
-        <signal name="XLXN_280" />
-        <signal name="XLXN_283" />
-        <signal name="XLXN_285" />
-        <signal name="XLXN_286" />
-        <signal name="XLXN_287" />
-        <signal name="XLXN_288" />
-        <signal name="XLXN_297(31:0)" />
-        <signal name="XLXN_318(31:0)" />
-        <signal name="XLXN_326(31:0)" />
-        <signal name="XLXN_348" />
-        <signal name="XLXN_351" />
-        <signal name="XLXN_352" />
-        <signal name="XLXN_353" />
-        <signal name="XLXN_356(18:0)" />
-        <signal name="XLXN_358(31:0)" />
-        <signal name="XLXN_383(31:0)" />
-        <signal name="XLXN_404(31:0)" />
-        <signal name="XLXN_412(31:0)" />
-        <signal name="XLXN_434" />
-        <signal name="XLXN_437" />
-        <signal name="XLXN_438" />
-        <signal name="XLXN_439" />
-        <signal name="XLXN_442(18:0)" />
-        <signal name="XLXN_444(31:0)" />
         <signal name="XLXN_10" />
         <signal name="XLXN_12" />
         <signal name="XLXN_14" />
         <signal name="w4(31:0)" />
-        <signal name="XLXN_467(31:0)" />
         <signal name="w4(23:16)" />
         <signal name="w4(15:8)" />
         <signal name="w4(7:0)" />
@@ -75,7 +30,6 @@
         <signal name="w3(15:8)" />
         <signal name="w3(23:16)" />
         <signal name="w3(31:0)" />
-        <signal name="XLXN_488(31:0)" />
         <signal name="XLXN_40" />
         <signal name="XLXN_39" />
         <signal name="XLXN_38" />
@@ -83,7 +37,6 @@
         <signal name="XLXN_169" />
         <signal name="XLXN_170" />
         <signal name="w2(31:0)" />
-        <signal name="XLXN_496(31:0)" />
         <signal name="w2(23:16)" />
         <signal name="w2(15:8)" />
         <signal name="w2(7:0)" />
@@ -104,16 +57,9 @@
         <signal name="XLXN_192" />
         <signal name="XLXN_193" />
         <signal name="XLXN_249" />
-        <signal name="XLXN_517" />
         <signal name="XLXN_251" />
         <signal name="XLXN_253" />
-        <signal name="XLXN_520" />
-        <signal name="XLXN_521" />
-        <signal name="XLXN_522" />
-        <signal name="XLXN_255" />
-        <signal name="XLXN_525(18:0)" />
         <signal name="w1(31:0)" />
-        <signal name="XLXN_527(31:0)" />
         <signal name="w2_in(31:0)" />
         <signal name="ActiveAdders(7)" />
         <signal name="ActiveAdders(6)" />
@@ -131,7 +77,6 @@
         <signal name="ActiveAdders(12)" />
         <signal name="ActiveAdders(4)" />
         <signal name="w1_in(31:0)" />
-        <signal name="XLXN_558(31:0)" />
         <signal name="w0_in(7:0)" />
         <signal name="w0_in(15:8)" />
         <signal name="w0_in(23:16)" />
@@ -144,33 +89,17 @@
         <signal name="XLXN_555" />
         <signal name="XLXN_556" />
         <signal name="w0(31:0)" />
-        <signal name="XLXN_575(31:0)" />
         <signal name="ActiveAdders(2)" />
         <signal name="ActiveAdders(1)" />
         <signal name="ActiveAdders(0)" />
         <signal name="w0_in(31:0)" />
         <signal name="ActiveAdders(3)" />
-        <signal name="XLXN_581" />
         <signal name="XLXN_582" />
         <signal name="ActiveAdders(18:0)" />
-        <signal name="XLXN_583" />
-        <signal name="XLXN_584" />
         <signal name="XLXN_585" />
         <signal name="inc" />
         <signal name="XLXN_588" />
-        <signal name="XLXN_589" />
         <signal name="AdderNum(3:0)" />
-        <signal name="XLXN_591" />
-        <signal name="XLXN_592" />
-        <signal name="XLXN_593" />
-        <signal name="XLXN_594" />
-        <signal name="XLXN_595" />
-        <signal name="XLXN_596" />
-        <signal name="XLXN_597" />
-        <signal name="XLXN_598" />
-        <signal name="XLXN_599" />
-        <signal name="XLXN_600" />
-        <signal name="XLXN_601" />
         <port polarity="Output" name="w4(31:0)" />
         <port polarity="Input" name="w4_in(31:0)" />
         <port polarity="Input" name="w3_in(31:0)" />
@@ -185,7 +114,7 @@
         <port polarity="Input" name="inc" />
         <port polarity="Input" name="AdderNum(3:0)" />
         <blockdef name="charAdder">
-            <timestamp>2016-11-8T2:30:35</timestamp>
+            <timestamp>2016-11-17T3:51:43</timestamp>
             <rect width="304" x="64" y="-256" height="256" />
             <line x2="0" y1="-224" y2="-224" x1="64" />
             <line x2="0" y1="-160" y2="-160" x1="64" />
@@ -213,7 +142,7 @@
             <line x2="32" y1="-64" y2="-64" x1="96" />
         </blockdef>
         <blockdef name="firstCharAdder">
-            <timestamp>2016-11-8T2:34:2</timestamp>
+            <timestamp>2016-11-17T3:54:16</timestamp>
             <rect width="320" x="64" y="-256" height="256" />
             <line x2="0" y1="-224" y2="-224" x1="64" />
             <line x2="0" y1="-160" y2="-160" x1="64" />

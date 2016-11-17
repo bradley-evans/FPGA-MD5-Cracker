@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/bevans/Desktop/fpga-md5-cracker-master/Hardware/SpiSlave.v -lang verilog -prj MD5-small -o SpiSlave.spl -module SpiSlave -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a SpiSlave.spl C:/Users/bevans/Desktop/FPGA-MD5-Cracker/FPGA_small/MD5-small/SpiSlave.sym 

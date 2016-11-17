@@ -1,0 +1,5 @@
+MODULE bruteforce_testbench
+	SUBMODULE bruteforce
+		INSTANCE XLXI_1
+	SUBMODULE wordReg
+		INSTANCE XLXI_2

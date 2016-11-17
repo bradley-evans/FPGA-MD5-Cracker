@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <drawing version="7">
-    <attr value="spartan3a" name="DeviceFamilyName">
+    <attr value="zynq" name="DeviceFamilyName">
         <trait delete="all:0" />
         <trait editname="all:0" />
         <trait edittrait="all:0" />
@@ -49,7 +49,12 @@
         <signal name="XLXN_75(31:0)" />
         <signal name="XLXN_77(31:0)" />
         <signal name="XLXN_78(31:0)" />
-        <signal name="clk" />
+        <signal name="clk">
+            <attr name="KEEP">
+                <trait verilog="all:0 wsynth:1" />
+                <trait vhdl="all:0 wa:1 wd:1" />
+            </attr>
+        </signal>
         <signal name="run" />
         <signal name="rst" />
         <signal name="UserHash(127:0)" />
@@ -634,7 +639,7 @@
             <wire x2="3712" y1="4080" y2="4080" x1="3456" />
         </branch>
         <branch name="FoundBus(15:0)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4560" y="3246" type="branch" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4560" y="3246" type="branch" />
             <wire x2="3344" y1="544" y2="544" x1="3280" />
             <wire x2="3280" y1="544" y2="912" x1="3280" />
             <wire x2="3280" y1="912" y2="1392" x1="3280" />
@@ -650,8 +655,8 @@
             <wire x2="4560" y1="1392" y2="1888" x1="4560" />
             <wire x2="4560" y1="1888" y2="2384" x1="4560" />
             <wire x2="4560" y1="2384" y2="2864" x1="4560" />
-            <wire x2="4560" y1="2864" y2="3246" x1="4560" />
-            <wire x2="4560" y1="3246" y2="3344" x1="4560" />
+            <wire x2="4560" y1="2864" y2="3248" x1="4560" />
+            <wire x2="4560" y1="3248" y2="3344" x1="4560" />
             <wire x2="4560" y1="3344" y2="3840" x1="4560" />
             <wire x2="4560" y1="3840" y2="4320" x1="4560" />
             <wire x2="4560" y1="4320" y2="4800" x1="4560" />

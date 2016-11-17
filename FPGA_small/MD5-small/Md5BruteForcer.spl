@@ -1,0 +1,14 @@
+[Inputs]
+clk
+reset
+hasReceived
+=dataIn[31:0]=
+[Outputs]
+hasMatched
+resetGenerator
+=dataOut[31:0]=
+=text[127:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Md5BruteForcer
+

@@ -69,7 +69,7 @@
         <port polarity="Output" name="w3_Count(31:0)" />
         <port polarity="Output" name="w4_Count(31:0)" />
         <blockdef name="bruteforce">
-            <timestamp>2016-11-14T0:1:7</timestamp>
+            <timestamp>2016-11-17T3:56:39</timestamp>
             <rect width="368" x="64" y="-448" height="448" />
             <rect width="64" x="0" y="-428" height="24" />
             <line x2="0" y1="-416" y2="-416" x1="64" />
@@ -386,22 +386,28 @@
             <wire x2="1136" y1="1824" y2="1936" x1="1136" />
         </branch>
         <branch name="AdderNum(3:0)">
-            <wire x2="624" y1="1888" y2="1888" x1="352" />
+            <wire x2="368" y1="1888" y2="1888" x1="352" />
+            <wire x2="624" y1="1888" y2="1888" x1="368" />
         </branch>
         <branch name="XLXN_3(31:0)">
-            <wire x2="1456" y1="1760" y2="1760" x1="1120" />
+            <wire x2="1440" y1="1760" y2="1760" x1="1120" />
+            <wire x2="1456" y1="1760" y2="1760" x1="1440" />
         </branch>
         <branch name="XLXN_4(31:0)">
-            <wire x2="1456" y1="1696" y2="1696" x1="1120" />
+            <wire x2="1440" y1="1696" y2="1696" x1="1120" />
+            <wire x2="1456" y1="1696" y2="1696" x1="1440" />
         </branch>
         <branch name="XLXN_5(31:0)">
-            <wire x2="1456" y1="1632" y2="1632" x1="1120" />
+            <wire x2="1440" y1="1632" y2="1632" x1="1120" />
+            <wire x2="1456" y1="1632" y2="1632" x1="1440" />
         </branch>
         <branch name="XLXN_6(31:0)">
-            <wire x2="1456" y1="1568" y2="1568" x1="1120" />
+            <wire x2="1440" y1="1568" y2="1568" x1="1120" />
+            <wire x2="1456" y1="1568" y2="1568" x1="1440" />
         </branch>
         <branch name="XLXN_7(31:0)">
-            <wire x2="1456" y1="1504" y2="1504" x1="1120" />
+            <wire x2="1440" y1="1504" y2="1504" x1="1120" />
+            <wire x2="1456" y1="1504" y2="1504" x1="1440" />
         </branch>
         <branch name="XLXN_13(31:0)">
             <wire x2="592" y1="1008" y2="1504" x1="592" />

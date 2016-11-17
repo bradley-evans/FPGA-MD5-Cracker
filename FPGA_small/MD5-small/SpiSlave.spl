@@ -1,0 +1,13 @@
+[Inputs]
+sck
+ss
+mosi
+=misoBuffer[7:0]=
+[Outputs]
+miso
+shiftComplete
+=mosiBuffer[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel SpiSlave
+

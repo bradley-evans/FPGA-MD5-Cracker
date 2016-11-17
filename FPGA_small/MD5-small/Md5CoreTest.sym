@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="Md5CoreTest">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2016-11-17T2:43:35</timestamp>
+    <attr value="Md5CoreTest" name="VeriModel" />
+    <graph>
+        <rect width="256" x="64" y="0" height="0" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="192" y="-8" type="symbol" />
+    </graph>
+</symbol>

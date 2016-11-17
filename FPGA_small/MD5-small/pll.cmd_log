@@ -1,0 +1,1 @@
+vhdtdtfi -lib work ../../../fpga-md5-cracker-master/Hardware/pll.vhd -prj MD5-small -o pll.spl -module pll -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
