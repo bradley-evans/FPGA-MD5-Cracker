@@ -8,16 +8,11 @@
     <netlist>
         <signal name="XLXN_1(18:0)" />
         <signal name="AdderNum(3:0)" />
-        <signal name="XLXN_3(31:0)" />
-        <signal name="XLXN_4(31:0)" />
-        <signal name="XLXN_5(31:0)" />
-        <signal name="XLXN_6(31:0)" />
-        <signal name="XLXN_7(31:0)" />
-        <signal name="XLXN_13(31:0)" />
-        <signal name="XLXN_14(31:0)" />
-        <signal name="XLXN_15(31:0)" />
-        <signal name="XLXN_16(31:0)" />
-        <signal name="XLXN_17(31:0)" />
+        <signal name="w4_regout(31:0)" />
+        <signal name="w3_regout(31:0)" />
+        <signal name="w2_regout(31:0)" />
+        <signal name="w1_regout(31:0)" />
+        <signal name="w0_regout(31:0)" />
         <signal name="XLXN_8(31:0)" />
         <signal name="Reset" />
         <signal name="Clk" />
@@ -30,7 +25,6 @@
         <signal name="XLXN_34(31:0)" />
         <signal name="UserHash(127:0)" />
         <signal name="Found" />
-        <signal name="XLXN_41(127:0)" />
         <signal name="w0_Out(31:0)" />
         <signal name="w1_Out(31:0)" />
         <signal name="w2_Out(31:0)" />
@@ -52,6 +46,12 @@
         <signal name="XLXN_151(31:0)" />
         <signal name="XLXN_152(31:0)" />
         <signal name="XLXN_153(31:0)" />
+        <signal name="HashOut(127:0)" />
+        <signal name="XLXN_154(31:0)" />
+        <signal name="XLXN_155(31:0)" />
+        <signal name="XLXN_156(31:0)" />
+        <signal name="XLXN_157(31:0)" />
+        <signal name="XLXN_158(31:0)" />
         <port polarity="Input" name="AdderNum(3:0)" />
         <port polarity="Input" name="Reset" />
         <port polarity="Input" name="Clk" />
@@ -106,7 +106,7 @@
             <line x2="448" y1="-32" y2="-32" x1="384" />
         </blockdef>
         <blockdef name="wordReg">
-            <timestamp>2016-11-14T0:45:55</timestamp>
+            <timestamp>2016-11-30T21:52:33</timestamp>
             <rect width="64" x="320" y="-1004" height="24" />
             <line x2="384" y1="-992" y2="-992" x1="320" />
             <rect width="64" x="320" y="-940" height="24" />
@@ -141,6 +141,13 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
             <rect width="64" x="0" y="-684" height="24" />
             <line x2="0" y1="-672" y2="-672" x1="64" />
+            <rect width="64" x="0" y="-140" height="24" />
+            <line x2="0" y1="-128" y2="-128" x1="64" />
+            <line x2="0" y1="-48" y2="-48" x1="64" />
+            <line x2="0" y1="-80" y2="-80" x1="64" />
+            <line x2="0" y1="-1056" y2="-1056" x1="64" />
+            <rect width="256" x="64" y="-1088" height="1088" />
+            <line x2="384" y1="-1040" y2="-1040" x1="320" />
             <rect width="64" x="0" y="-620" height="24" />
             <line x2="0" y1="-608" y2="-608" x1="64" />
             <rect width="64" x="0" y="-556" height="24" />
@@ -149,13 +156,6 @@
             <line x2="0" y1="-480" y2="-480" x1="64" />
             <rect width="64" x="0" y="-428" height="24" />
             <line x2="0" y1="-416" y2="-416" x1="64" />
-            <rect width="64" x="0" y="-140" height="24" />
-            <line x2="0" y1="-128" y2="-128" x1="64" />
-            <line x2="0" y1="-48" y2="-48" x1="64" />
-            <line x2="0" y1="-80" y2="-80" x1="64" />
-            <line x2="0" y1="-1056" y2="-1056" x1="64" />
-            <rect width="256" x="64" y="-1088" height="1088" />
-            <line x2="384" y1="-1040" y2="-1040" x1="320" />
         </blockdef>
         <blockdef name="MD5">
             <timestamp>2016-11-14T0:39:43</timestamp>
@@ -269,26 +269,26 @@
             <line x2="-48" y1="-224" y2="-224" x1="16" />
         </blockdef>
         <block symbolname="bruteforce" name="XLXI_1">
-            <blockpin signalname="XLXN_13(31:0)" name="w4_in(31:0)" />
-            <blockpin signalname="XLXN_14(31:0)" name="w3_in(31:0)" />
-            <blockpin signalname="XLXN_15(31:0)" name="w2_in(31:0)" />
-            <blockpin signalname="XLXN_16(31:0)" name="w1_in(31:0)" />
-            <blockpin signalname="XLXN_17(31:0)" name="w0_in(31:0)" />
+            <blockpin signalname="w4_regout(31:0)" name="w4_in(31:0)" />
+            <blockpin signalname="w3_regout(31:0)" name="w3_in(31:0)" />
+            <blockpin signalname="w2_regout(31:0)" name="w2_in(31:0)" />
+            <blockpin signalname="w1_regout(31:0)" name="w1_in(31:0)" />
+            <blockpin signalname="w0_regout(31:0)" name="w0_in(31:0)" />
             <blockpin signalname="XLXN_30" name="inc" />
             <blockpin signalname="AdderNum(3:0)" name="AdderNum(3:0)" />
-            <blockpin signalname="XLXN_7(31:0)" name="w4(31:0)" />
-            <blockpin signalname="XLXN_6(31:0)" name="w3(31:0)" />
-            <blockpin signalname="XLXN_5(31:0)" name="w2(31:0)" />
-            <blockpin signalname="XLXN_4(31:0)" name="w1(31:0)" />
-            <blockpin signalname="XLXN_3(31:0)" name="w0(31:0)" />
+            <blockpin signalname="XLXN_154(31:0)" name="w4(31:0)" />
+            <blockpin signalname="XLXN_155(31:0)" name="w3(31:0)" />
+            <blockpin signalname="XLXN_156(31:0)" name="w2(31:0)" />
+            <blockpin signalname="XLXN_157(31:0)" name="w1(31:0)" />
+            <blockpin signalname="XLXN_158(31:0)" name="w0(31:0)" />
             <blockpin signalname="XLXN_1(18:0)" name="ActiveAdders(18:0)" />
         </block>
         <block symbolname="wordReg" name="XLXI_4">
-            <blockpin signalname="XLXN_17(31:0)" name="w0(31:0)" />
-            <blockpin signalname="XLXN_16(31:0)" name="w1(31:0)" />
-            <blockpin signalname="XLXN_15(31:0)" name="w2(31:0)" />
-            <blockpin signalname="XLXN_14(31:0)" name="w3(31:0)" />
-            <blockpin signalname="XLXN_13(31:0)" name="w4(31:0)" />
+            <blockpin signalname="w0_regout(31:0)" name="w0(31:0)" />
+            <blockpin signalname="w1_regout(31:0)" name="w1(31:0)" />
+            <blockpin signalname="w2_regout(31:0)" name="w2(31:0)" />
+            <blockpin signalname="w3_regout(31:0)" name="w3(31:0)" />
+            <blockpin signalname="w4_regout(31:0)" name="w4(31:0)" />
             <blockpin signalname="XLXN_143(31:0)" name="w5(31:0)" />
             <blockpin signalname="XLXN_144(31:0)" name="w6(31:0)" />
             <blockpin signalname="XLXN_145(31:0)" name="w7(31:0)" />
@@ -300,16 +300,16 @@
             <blockpin signalname="XLXN_151(31:0)" name="w13(31:0)" />
             <blockpin signalname="XLXN_152(31:0)" name="w14(31:0)" />
             <blockpin signalname="XLXN_153(31:0)" name="w15(31:0)" />
-            <blockpin signalname="XLXN_7(31:0)" name="w4_in(31:0)" />
-            <blockpin signalname="XLXN_6(31:0)" name="w1_in(31:0)" />
-            <blockpin signalname="XLXN_5(31:0)" name="w3_in(31:0)" />
-            <blockpin signalname="XLXN_4(31:0)" name="w2_in(31:0)" />
-            <blockpin signalname="XLXN_3(31:0)" name="w0_in(31:0)" />
+            <blockpin signalname="XLXN_154(31:0)" name="w4_in(31:0)" />
             <blockpin signalname="XLXN_8(31:0)" name="w14_in(31:0)" />
             <blockpin signalname="Reset" name="Reset" />
             <blockpin signalname="Clk" name="Clk" />
             <blockpin signalname="XLXN_30" name="Run" />
             <blockpin signalname="XLXN_29" name="Done" />
+            <blockpin signalname="XLXN_155(31:0)" name="w3_in(31:0)" />
+            <blockpin signalname="XLXN_156(31:0)" name="w2_in(31:0)" />
+            <blockpin signalname="XLXN_157(31:0)" name="w1_in(31:0)" />
+            <blockpin signalname="XLXN_158(31:0)" name="w0_in(31:0)" />
         </block>
         <block symbolname="Size" name="XLXI_2">
             <blockpin signalname="XLXN_1(18:0)" name="ActiveAdders(18:0)" />
@@ -317,11 +317,11 @@
         </block>
         <block symbolname="MD5" name="XLXI_6">
             <blockpin signalname="XLXN_30" name="Done" />
-            <blockpin signalname="XLXN_17(31:0)" name="w0(31:0)" />
-            <blockpin signalname="XLXN_16(31:0)" name="w1(31:0)" />
-            <blockpin signalname="XLXN_15(31:0)" name="w2(31:0)" />
-            <blockpin signalname="XLXN_14(31:0)" name="w3(31:0)" />
-            <blockpin signalname="XLXN_13(31:0)" name="w4(31:0)" />
+            <blockpin signalname="w0_regout(31:0)" name="w0(31:0)" />
+            <blockpin signalname="w1_regout(31:0)" name="w1(31:0)" />
+            <blockpin signalname="w2_regout(31:0)" name="w2(31:0)" />
+            <blockpin signalname="w3_regout(31:0)" name="w3(31:0)" />
+            <blockpin signalname="w4_regout(31:0)" name="w4(31:0)" />
             <blockpin signalname="XLXN_143(31:0)" name="w5(31:0)" />
             <blockpin signalname="XLXN_144(31:0)" name="w6(31:0)" />
             <blockpin signalname="XLXN_145(31:0)" name="w7(31:0)" />
@@ -347,11 +347,11 @@
             <blockpin signalname="XLXN_32(31:0)" name="Hash_2(31:0)" />
             <blockpin signalname="XLXN_33(31:0)" name="Hash_3(31:0)" />
             <blockpin signalname="XLXN_34(31:0)" name="Hash_4(31:0)" />
-            <blockpin signalname="XLXN_41(127:0)" name="Hash_Out(127:0)" />
+            <blockpin signalname="HashOut(127:0)" name="Hash_Out(127:0)" />
         </block>
         <block symbolname="compareHash" name="XLXI_9">
             <blockpin signalname="Found" name="Found" />
-            <blockpin signalname="XLXN_41(127:0)" name="MD5Hash(127:0)" />
+            <blockpin signalname="HashOut(127:0)" name="MD5Hash(127:0)" />
             <blockpin signalname="UserHash(127:0)" name="UserHash(127:0)" />
             <blockpin signalname="Clk" name="clk" />
             <blockpin signalname="Reset" name="Reset" />
@@ -370,11 +370,11 @@
             <blockpin signalname="w4_Count(31:0)" name="w4_Count(31:0)" />
             <blockpin signalname="Clk" name="clk" />
             <blockpin signalname="Found" name="Control" />
-            <blockpin signalname="XLXN_17(31:0)" name="w0(31:0)" />
-            <blockpin signalname="XLXN_16(31:0)" name="w1(31:0)" />
-            <blockpin signalname="XLXN_15(31:0)" name="w2(31:0)" />
-            <blockpin signalname="XLXN_14(31:0)" name="w3(31:0)" />
-            <blockpin signalname="XLXN_13(31:0)" name="w4(31:0)" />
+            <blockpin signalname="w0_regout(31:0)" name="w0(31:0)" />
+            <blockpin signalname="w1_regout(31:0)" name="w1(31:0)" />
+            <blockpin signalname="w2_regout(31:0)" name="w2(31:0)" />
+            <blockpin signalname="w3_regout(31:0)" name="w3(31:0)" />
+            <blockpin signalname="w4_regout(31:0)" name="w4(31:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -386,30 +386,9 @@
             <wire x2="1136" y1="1824" y2="1936" x1="1136" />
         </branch>
         <branch name="AdderNum(3:0)">
-            <wire x2="368" y1="1888" y2="1888" x1="352" />
-            <wire x2="624" y1="1888" y2="1888" x1="368" />
+            <wire x2="624" y1="1888" y2="1888" x1="352" />
         </branch>
-        <branch name="XLXN_3(31:0)">
-            <wire x2="1440" y1="1760" y2="1760" x1="1120" />
-            <wire x2="1456" y1="1760" y2="1760" x1="1440" />
-        </branch>
-        <branch name="XLXN_4(31:0)">
-            <wire x2="1440" y1="1696" y2="1696" x1="1120" />
-            <wire x2="1456" y1="1696" y2="1696" x1="1440" />
-        </branch>
-        <branch name="XLXN_5(31:0)">
-            <wire x2="1440" y1="1632" y2="1632" x1="1120" />
-            <wire x2="1456" y1="1632" y2="1632" x1="1440" />
-        </branch>
-        <branch name="XLXN_6(31:0)">
-            <wire x2="1440" y1="1568" y2="1568" x1="1120" />
-            <wire x2="1456" y1="1568" y2="1568" x1="1440" />
-        </branch>
-        <branch name="XLXN_7(31:0)">
-            <wire x2="1440" y1="1504" y2="1504" x1="1120" />
-            <wire x2="1456" y1="1504" y2="1504" x1="1440" />
-        </branch>
-        <branch name="XLXN_13(31:0)">
+        <branch name="w4_regout(31:0)">
             <wire x2="592" y1="1008" y2="1504" x1="592" />
             <wire x2="624" y1="1504" y2="1504" x1="592" />
             <wire x2="1968" y1="1008" y2="1008" x1="592" />
@@ -419,7 +398,7 @@
             <wire x2="2736" y1="720" y2="720" x1="1968" />
             <wire x2="1968" y1="720" y2="1008" x1="1968" />
         </branch>
-        <branch name="XLXN_14(31:0)">
+        <branch name="w3_regout(31:0)">
             <wire x2="576" y1="992" y2="1568" x1="576" />
             <wire x2="624" y1="1568" y2="1568" x1="576" />
             <wire x2="1952" y1="992" y2="992" x1="576" />
@@ -429,7 +408,7 @@
             <wire x2="2736" y1="656" y2="656" x1="1952" />
             <wire x2="1952" y1="656" y2="992" x1="1952" />
         </branch>
-        <branch name="XLXN_15(31:0)">
+        <branch name="w2_regout(31:0)">
             <wire x2="560" y1="976" y2="1632" x1="560" />
             <wire x2="624" y1="1632" y2="1632" x1="560" />
             <wire x2="1936" y1="976" y2="976" x1="560" />
@@ -439,7 +418,7 @@
             <wire x2="2736" y1="592" y2="592" x1="1936" />
             <wire x2="1936" y1="592" y2="976" x1="1936" />
         </branch>
-        <branch name="XLXN_16(31:0)">
+        <branch name="w1_regout(31:0)">
             <wire x2="544" y1="960" y2="1696" x1="544" />
             <wire x2="624" y1="1696" y2="1696" x1="544" />
             <wire x2="1920" y1="960" y2="960" x1="544" />
@@ -449,7 +428,7 @@
             <wire x2="2736" y1="528" y2="528" x1="1920" />
             <wire x2="1920" y1="528" y2="960" x1="1920" />
         </branch>
-        <branch name="XLXN_17(31:0)">
+        <branch name="w0_regout(31:0)">
             <wire x2="528" y1="944" y2="1760" x1="528" />
             <wire x2="624" y1="1760" y2="1760" x1="528" />
             <wire x2="1904" y1="944" y2="944" x1="528" />
@@ -537,13 +516,6 @@
         <iomarker fontsize="28" x="352" y="2416" name="Clk" orien="R180" />
         <iomarker fontsize="28" x="352" y="2480" name="Run" orien="R180" />
         <iomarker fontsize="28" x="352" y="2512" name="UserHash(127:0)" orien="R180" />
-        <branch name="XLXN_41(127:0)">
-            <wire x2="3280" y1="1456" y2="1456" x1="2768" />
-            <wire x2="2768" y1="1456" y2="1616" x1="2768" />
-            <wire x2="2864" y1="1616" y2="1616" x1="2768" />
-            <wire x2="3280" y1="1184" y2="1184" x1="3248" />
-            <wire x2="3280" y1="1184" y2="1456" x1="3280" />
-        </branch>
         <instance x="2784" y="1408" name="XLXI_8" orien="R0">
         </instance>
         <instance x="2864" y="1856" name="XLXI_9" orien="R0">
@@ -551,44 +523,34 @@
         <instance x="2784" y="944" name="XLXI_28" orien="R0">
         </instance>
         <branch name="w0_Out(31:0)">
-            <wire x2="3184" y1="336" y2="336" x1="3168" />
-            <wire x2="3248" y1="336" y2="336" x1="3184" />
+            <wire x2="3248" y1="336" y2="336" x1="3168" />
         </branch>
         <branch name="w1_Out(31:0)">
-            <wire x2="3184" y1="400" y2="400" x1="3168" />
-            <wire x2="3248" y1="400" y2="400" x1="3184" />
+            <wire x2="3248" y1="400" y2="400" x1="3168" />
         </branch>
         <branch name="w2_Out(31:0)">
-            <wire x2="3184" y1="464" y2="464" x1="3168" />
-            <wire x2="3248" y1="464" y2="464" x1="3184" />
+            <wire x2="3248" y1="464" y2="464" x1="3168" />
         </branch>
         <branch name="w3_Out(31:0)">
-            <wire x2="3184" y1="528" y2="528" x1="3168" />
-            <wire x2="3248" y1="528" y2="528" x1="3184" />
+            <wire x2="3248" y1="528" y2="528" x1="3168" />
         </branch>
         <branch name="w4_Out(31:0)">
-            <wire x2="3184" y1="592" y2="592" x1="3168" />
-            <wire x2="3248" y1="592" y2="592" x1="3184" />
+            <wire x2="3248" y1="592" y2="592" x1="3168" />
         </branch>
         <branch name="w0_Count(31:0)">
-            <wire x2="3184" y1="656" y2="656" x1="3168" />
-            <wire x2="3248" y1="656" y2="656" x1="3184" />
+            <wire x2="3248" y1="656" y2="656" x1="3168" />
         </branch>
         <branch name="w1_Count(31:0)">
-            <wire x2="3184" y1="720" y2="720" x1="3168" />
-            <wire x2="3248" y1="720" y2="720" x1="3184" />
+            <wire x2="3248" y1="720" y2="720" x1="3168" />
         </branch>
         <branch name="w2_Count(31:0)">
-            <wire x2="3184" y1="784" y2="784" x1="3168" />
-            <wire x2="3248" y1="784" y2="784" x1="3184" />
+            <wire x2="3248" y1="784" y2="784" x1="3168" />
         </branch>
         <branch name="w3_Count(31:0)">
-            <wire x2="3184" y1="848" y2="848" x1="3168" />
-            <wire x2="3248" y1="848" y2="848" x1="3184" />
+            <wire x2="3248" y1="848" y2="848" x1="3168" />
         </branch>
         <branch name="w4_Count(31:0)">
-            <wire x2="3184" y1="912" y2="912" x1="3168" />
-            <wire x2="3248" y1="912" y2="912" x1="3184" />
+            <wire x2="3248" y1="912" y2="912" x1="3168" />
         </branch>
         <iomarker fontsize="28" x="3248" y="336" name="w0_Out(31:0)" orien="R0" />
         <iomarker fontsize="28" x="3248" y="400" name="w1_Out(31:0)" orien="R0" />
@@ -603,12 +565,10 @@
         <branch name="Found">
             <wire x2="2736" y1="912" y2="912" x1="2720" />
             <wire x2="2720" y1="912" y2="1040" x1="2720" />
-            <wire x2="3312" y1="1040" y2="1040" x1="2720" />
-            <wire x2="3328" y1="1040" y2="1040" x1="3312" />
+            <wire x2="3328" y1="1040" y2="1040" x1="2720" />
             <wire x2="3328" y1="1040" y2="1568" x1="3328" />
             <wire x2="3376" y1="1568" y2="1568" x1="3328" />
-            <wire x2="3264" y1="1568" y2="1568" x1="3248" />
-            <wire x2="3328" y1="1568" y2="1568" x1="3264" />
+            <wire x2="3328" y1="1568" y2="1568" x1="3248" />
         </branch>
         <iomarker fontsize="28" x="3376" y="1568" name="Found" orien="R0" />
         <branch name="XLXN_143(31:0)">
@@ -624,8 +584,7 @@
             <wire x2="2096" y1="1696" y2="1696" x1="1840" />
         </branch>
         <branch name="XLXN_147(31:0)">
-            <wire x2="1856" y1="1760" y2="1760" x1="1840" />
-            <wire x2="2096" y1="1760" y2="1760" x1="1856" />
+            <wire x2="2096" y1="1760" y2="1760" x1="1840" />
         </branch>
         <branch name="XLXN_148(31:0)">
             <wire x2="2096" y1="1824" y2="1824" x1="1840" />
@@ -644,6 +603,28 @@
         </branch>
         <branch name="XLXN_153(31:0)">
             <wire x2="2096" y1="2144" y2="2144" x1="1840" />
+        </branch>
+        <branch name="HashOut(127:0)">
+            <wire x2="3280" y1="1456" y2="1456" x1="2768" />
+            <wire x2="2768" y1="1456" y2="1616" x1="2768" />
+            <wire x2="2864" y1="1616" y2="1616" x1="2768" />
+            <wire x2="3280" y1="1184" y2="1184" x1="3248" />
+            <wire x2="3280" y1="1184" y2="1456" x1="3280" />
+        </branch>
+        <branch name="XLXN_154(31:0)">
+            <wire x2="1456" y1="1504" y2="1504" x1="1120" />
+        </branch>
+        <branch name="XLXN_155(31:0)">
+            <wire x2="1456" y1="1568" y2="1568" x1="1120" />
+        </branch>
+        <branch name="XLXN_156(31:0)">
+            <wire x2="1456" y1="1632" y2="1632" x1="1120" />
+        </branch>
+        <branch name="XLXN_157(31:0)">
+            <wire x2="1456" y1="1696" y2="1696" x1="1120" />
+        </branch>
+        <branch name="XLXN_158(31:0)">
+            <wire x2="1456" y1="1760" y2="1760" x1="1120" />
         </branch>
     </sheet>
 </drawing>

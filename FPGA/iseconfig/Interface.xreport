@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-11-17T08:29:27</DateModified>
+  <DateModified>2016-11-30T13:25:02</DateModified>
   <ModuleName>Interface</ModuleName>
-  <SummaryTimeStamp>2016-11-16T18:35:42</SummaryTimeStamp>
+  <SummaryTimeStamp>2016-11-21T19:56:17</SummaryTimeStamp>
   <SavedFilePath>C:/Users/bevans/Desktop/FPGA-MD5-Cracker/FPGA/iseconfig/Interface.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/bevans/Desktop/FPGA-MD5-Cracker/FPGA/xilinx/MD5\</ImplementationReportsDirectory>
   <DateInitialized>2016-11-16T19:57:32</DateInitialized>
@@ -11,7 +11,7 @@
  </header>
  <body>
   <viewgroup label="Design Overview" >
-   <view inputState="Unknown" program="implementation" ShowPartitionData="false" type="FPGASummary" file="MD5_Toplevel_summary.html" label="Summary" >
+   <view inputState="Unknown" program="implementation" ExpandErrors="true" ShowPartitionData="false" ExpandConstraints="true" type="FPGASummary" file="MD5_Toplevel_summary.html" label="Summary" ExpandClockNets="true" ExpandWarnings="true" >
     <toc-item title="Design Overview" target="Design Overview" />
     <toc-item title="Design Utilization Summary" target="Design Utilization Summary" />
     <toc-item title="Performance Summary" target="Performance Summary" />

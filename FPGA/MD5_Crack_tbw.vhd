@@ -64,7 +64,7 @@ BEGIN
 		Reset => Reset, 
 		Clk => Clk, 
 		Run => Run, 
-		UserHash => UserHash, 
+		UserHash => UserHash,
 		Found => Found, 
 		w0_Out => w0_Out, 
 		w1_Out => w1_Out, 
@@ -82,13 +82,15 @@ BEGIN
 	clock : PROCESS
 	BEGIN
 		Clk <= '1';
-		wait for 10 ps;
+		wait for 1 ps;
 		Clk <= '0';
-		wait for 10 ps;
+		wait for 1 ps;
 	END PROCESS;
    data : PROCESS
    BEGIN
 		UserHash <= x"74b87337454200d4d33f80c4663dc5e5";
+		Reset <= '1';
+		wait for 2 ps;
 		Run <= '1';
 		Reset <= '0';
 		AdderNum <= x"0";

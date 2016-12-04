@@ -1,15 +1,2 @@
-select figure at 874 1721 8 -branches -sn=1
-select figure at 2330 1573 8 -branches -sn=1
-select figure at 2330 1573 8 -branches -all -sn=1
-select figure at 874 1828 8 -branches -sn=1
-select figure at 874 1828 8 -branches -all -sn=1
-select figure at 791 1847 8 -branches -sn=1
-select figure at 791 1847 8 -branches -sn=1
-select figure at 807 1554 8 -branches -sn=1
-select figure at 807 1554 8 -branches -sn=1
-select figure at 2340 1502 8 -branches -sn=1
-move instance at 2096 2368 to 2272 2352 R0 -keepConn -sn=1
-undo
-select figure at 2642 1123 8 -branches -sn=1
-select figure at 980 1708 8 -branches -sn=1
-select figure at 980 1708 8 -branches -all -sn=1
+select figure at 1001 1754 8 -branches -sn=1
+select figure at 1001 1754 8 -branches -all -sn=1

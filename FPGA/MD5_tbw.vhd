@@ -146,8 +146,10 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin
-      w0 <= x"61616161";
-		w1 <= x"00000080";
+		wait for 100 ps;
+		wait for Clk_period;
+      w0 <= x"007a7a6d";
+		w1 <= x"00000000";
 		w2 <= x"00000000";
 		w3 <= x"00000000";
 		w4 <= x"00000000";
@@ -160,8 +162,47 @@ BEGIN
 		w11 <= x"00000000";
 		w12 <= x"00000000";
 		w13 <= x"00000000";
-		w14 <= x"00000020";
+		w14 <= x"00000000";
 		w15 <= x"00000000";
+		wait for Clk_period;
+      w0 <= x"087a7a6d";
+		wait for Clk_period;
+      w0 <= x"087a7a6e";
+		wait for Clk_period;
+      w0 <= x"087a7a6f";
+		wait for Clk_period;
+      w0 <= x"087a7a70";
+		wait for Clk_period;
+      w0 <= x"087a7a71";
+		wait for Clk_period;
+      w0 <= x"087a7a72";
+		wait for Clk_period;
+      w0 <= x"087a7a73";
+		wait for Clk_period;
+      w0 <= x"087a7a74";
+		wait for Clk_period;
+      w0 <= x"087a7a75";
+		wait for Clk_period;
+      w0 <= x"087a7a76";
+		wait for Clk_period;
+      w0 <= x"087a7a77";
+		wait for Clk_period;
+      w0 <= x"087a7a78";
+		wait for Clk_period;
+      w0 <= x"087a7a79";
+		wait for Clk_period;
+      w0 <= x"087a7a7a";
+		wait for Clk_period;
+      w0 <= x"61616161";
+		w1 <= x"00000080";
+		wait for Clk_period;
+      w0 <= x"61616162";
+		wait for Clk_period;
+      w0 <= x"61616163";
+		wait for Clk_period;
+      w0 <= x"61616164";
+		wait for Clk_period;
+      w0 <= x"61616165";
 		wait;
    end process;
 

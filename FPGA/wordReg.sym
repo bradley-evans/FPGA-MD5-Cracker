@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="wordReg">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2016-11-14T0:45:55</timestamp>
+    <timestamp>2016-11-30T21:52:33</timestamp>
     <pin polarity="Output" x="384" y="-992" name="w0(31:0)" />
     <pin polarity="Output" x="384" y="-928" name="w1(31:0)" />
     <pin polarity="Output" x="384" y="-864" name="w2(31:0)" />
@@ -19,15 +19,15 @@
     <pin polarity="Output" x="384" y="-96" name="w14(31:0)" />
     <pin polarity="Output" x="384" y="-32" name="w15(31:0)" />
     <pin polarity="Input" x="0" y="-672" name="w4_in(31:0)" />
-    <pin polarity="Input" x="0" y="-608" name="w1_in(31:0)" />
-    <pin polarity="Input" x="0" y="-544" name="w3_in(31:0)" />
-    <pin polarity="Input" x="0" y="-480" name="w2_in(31:0)" />
-    <pin polarity="Input" x="0" y="-416" name="w0_in(31:0)" />
     <pin polarity="Input" x="0" y="-128" name="w14_in(31:0)" />
     <pin polarity="Input" x="0" y="-48" name="Reset" />
     <pin polarity="Input" x="0" y="-80" name="Clk" />
     <pin polarity="Input" x="0" y="-1056" name="Run" />
     <pin polarity="Output" x="384" y="-1040" name="Done" />
+    <pin polarity="Input" x="0" y="-608" name="w3_in(31:0)" />
+    <pin polarity="Input" x="0" y="-544" name="w2_in(31:0)" />
+    <pin polarity="Input" x="0" y="-480" name="w1_in(31:0)" />
+    <pin polarity="Input" x="0" y="-416" name="w0_in(31:0)" />
     <graph>
         <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="192" y="-1096" type="symbol" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-992" type="pin w0(31:0)" />
@@ -81,18 +81,6 @@
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-672" type="pin w4_in(31:0)" />
         <rect width="64" x="0" y="-684" height="24" />
         <line x2="0" y1="-672" y2="-672" x1="64" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-608" type="pin w1_in(31:0)" />
-        <rect width="64" x="0" y="-620" height="24" />
-        <line x2="0" y1="-608" y2="-608" x1="64" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-544" type="pin w3_in(31:0)" />
-        <rect width="64" x="0" y="-556" height="24" />
-        <line x2="0" y1="-544" y2="-544" x1="64" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-480" type="pin w2_in(31:0)" />
-        <rect width="64" x="0" y="-492" height="24" />
-        <line x2="0" y1="-480" y2="-480" x1="64" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-416" type="pin w0_in(31:0)" />
-        <rect width="64" x="0" y="-428" height="24" />
-        <line x2="0" y1="-416" y2="-416" x1="64" />
         <rect width="64" x="0" y="-140" height="24" />
         <line x2="0" y1="-128" y2="-128" x1="64" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-128" type="pin w14_in(31:0)" />
@@ -105,5 +93,17 @@
         <rect width="256" x="64" y="-1088" height="1088" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-1040" type="pin Done" />
         <line x2="384" y1="-1040" y2="-1040" x1="320" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-608" type="pin w3_in(31:0)" />
+        <rect width="64" x="0" y="-620" height="24" />
+        <line x2="0" y1="-608" y2="-608" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-544" type="pin w2_in(31:0)" />
+        <rect width="64" x="0" y="-556" height="24" />
+        <line x2="0" y1="-544" y2="-544" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-480" type="pin w1_in(31:0)" />
+        <rect width="64" x="0" y="-492" height="24" />
+        <line x2="0" y1="-480" y2="-480" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-416" type="pin w0_in(31:0)" />
+        <rect width="64" x="0" y="-428" height="24" />
+        <line x2="0" y1="-416" y2="-416" x1="64" />
     </graph>
 </symbol>
