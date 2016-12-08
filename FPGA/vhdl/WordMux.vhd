@@ -19,23 +19,23 @@ begin
 	begin
 		case Found is
 			when '0' =>
-				w0_out <= w0_0;
-				w1_out <= w1_0;
-				w2_out <= w2_0;
-				w3_out <= w3_0;
-				w4_out <= w4_0;
-			when '1' =>
 				w0_out <= w0_1;
 				w1_out <= w1_1;
 				w2_out <= w2_1;
 				w3_out <= w3_1;
 				w4_out <= w4_1;
-			when others =>
+			when '1' =>
 				w0_out <= w0_0;
 				w1_out <= w1_0;
 				w2_out <= w2_0;
 				w3_out <= w3_0;
-				w4_out <= w4_0;			
+				w4_out <= w4_0;
+			when others =>
+				w0_out <= w0_1;
+				w1_out <= w1_1;
+				w2_out <= w2_1;
+				w3_out <= w3_1;
+				w4_out <= w4_1;			
 		end case;
 	end process;
 end Behavioral;

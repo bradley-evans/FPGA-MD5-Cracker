@@ -1,20 +1,20 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company 
+-- Engineer 
 -- 
--- Create Date:    13:10:24 11/21/2016 
--- Design Name: 
--- Module Name:    SPI_Slave - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
+-- Create Date    131024 11212016 
+-- Design Name 
+-- Module Name    SPI_Slave - Behavioral 
+-- Project Name 
+-- Target Devices 
+-- Tool versions 
+-- Description 
 --
--- Dependencies: 
+-- Dependencies 
 --
--- Revision: 
+-- Revision 
 -- Revision 0.01 - File Created
--- Additional Comments: 
+-- Additional Comments 
 --
 ----------------------------------------------------------------------------------
 library IEEE;
@@ -30,12 +30,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity SPI_Slave is
-    Port ( AVR_IN 	: in  STD_LOGIC;
-           AVR_CLK 	: in  STD_LOGIC;
-           RST 		: in  STD_LOGIC;
-			  ENABLE		: in 	STD_LOGIC;
-			  READY		: out STD_LOGIC;
-           HASH_OUT 	: out STD_LOGIC_VECTOR (127 downto 0) := x"00000000000000000000000000000000" );
+    Port ( AVR_IN 	: 	in  	STD_LOGIC;
+           AVR_CLK 	:  in  	STD_LOGIC;
+           RST 		:	in  	STD_LOGIC;
+			  ENABLE		:	in 	STD_LOGIC;
+			  READY 		:	out 	STD_LOGIC;
+           HASH_OUT 	: 	out 	STD_LOGIC_VECTOR (127 downto 0) := x"00000000000000000000000000000000" );
 end SPI_Slave;
 
 architecture Behavioral of SPI_Slave is
@@ -54,7 +54,7 @@ begin
 					count := 0;
 					READY <= '0';				
 				ELSE 								-- Otherwise, if RST is LOW
-						IF (count > 126) THEN
+					IF (count > 126) THEN
 						hash(count) <= AVR_IN;
 						HASH_OUT <= hash (127 downto 0);
 						READY <= '1';
@@ -74,4 +74,3 @@ begin
 	
 
 end Behavioral;
-

@@ -62,7 +62,7 @@ ARCHITECTURE behavior OF SPI_TBW IS
    signal HASH_OUT : std_logic_vector(127 downto 0);
 
    -- Clock period definitions
-   constant AVR_CLK_period : time := 10 ps;
+   constant AVR_CLK_period : time := 2 ps;
  
  
 	
@@ -96,20 +96,20 @@ BEGIN
    begin		
 	
 		
-		wait for 10 ns;
+		wait for 20 ps;
 		ENABLE <= '1';
-		wait for 2 ns;
+		wait for 4 ps;
 		RST <= '1';
-		wait for 2 ns;
+		wait for 4 ps;
 		RST <= '0';
 		ENABLE <= '0';
-		wait for 2 ns;
+		wait for 4 ps;
 		FOR I in 0 to 127 LOOP
 			ENABLE <= '1';
 			AVR_IN <= hash(I);
-			wait for 1 ns;
+			wait for 2 ps;
 		END LOOP;
-		wait for 1 ns;
+		wait for 2 ps;
 		ENABLE <= '0';
 
    end process;

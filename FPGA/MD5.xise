@@ -65,7 +65,7 @@
     </file>
     <file xil_pn:name="Interface.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="15"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="17"/>
     </file>
     <file xil_pn:name="mercury.ucf" xil_pn:type="FILE_UCF">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
@@ -120,10 +120,24 @@
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="142"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="142"/>
     </file>
+    <file xil_pn:name="lcd16x2_ctrl.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="16"/>
+    </file>
+    <file xil_pn:name="lcd_parser.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="15"/>
+    </file>
+    <file xil_pn:name="lcd_parser_tbw.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="109"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="109"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="109"/>
+    </file>
   </files>
 
   <properties>
-    <property xil_pn:name="Add I/O Buffers" xil_pn:value="false" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Add I/O Buffers" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Allow Logic Optimization Across Hierarchy" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Allow SelectMAP Pins to Persist" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Allow Unexpanded Blocks" xil_pn:value="false" xil_pn:valueState="default"/>
@@ -162,7 +176,7 @@
     <property xil_pn:name="Create ASCII Configuration File" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Create Binary Configuration File" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Create Bit File" xil_pn:value="true" xil_pn:valueState="default"/>
-    <property xil_pn:name="Create I/O Pads from Ports" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Create I/O Pads from Ports" xil_pn:value="true" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Create IEEE 1532 Configuration File" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Create Logic Allocation File" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Create Mask File" xil_pn:value="false" xil_pn:valueState="default"/>
@@ -275,8 +289,8 @@
     <property xil_pn:name="Number of Clock Buffers" xil_pn:value="24" xil_pn:valueState="default"/>
     <property xil_pn:name="Number of Paths in Error/Verbose Report" xil_pn:value="3" xil_pn:valueState="default"/>
     <property xil_pn:name="Number of Paths in Error/Verbose Report Post Trace" xil_pn:value="3" xil_pn:valueState="default"/>
-    <property xil_pn:name="Optimization Effort" xil_pn:value="High" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Optimization Goal" xil_pn:value="Area" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Optimization Effort" xil_pn:value="Normal" xil_pn:valueState="default"/>
+    <property xil_pn:name="Optimization Goal" xil_pn:value="Speed" xil_pn:valueState="default"/>
     <property xil_pn:name="Optimization Strategy (Cover Mode)" xil_pn:value="Area" xil_pn:valueState="default"/>
     <property xil_pn:name="Optimize Instantiated Primitives" xil_pn:value="true" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Other Bitgen Command Line Options" xil_pn:value="" xil_pn:valueState="default"/>

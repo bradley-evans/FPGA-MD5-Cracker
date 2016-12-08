@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-11-30T13:25:02</DateModified>
+  <DateModified>2016-12-07T18:42:32</DateModified>
   <ModuleName>Interface</ModuleName>
-  <SummaryTimeStamp>2016-11-21T19:56:17</SummaryTimeStamp>
+  <SummaryTimeStamp>2016-12-07T16:08:34</SummaryTimeStamp>
   <SavedFilePath>C:/Users/bevans/Desktop/FPGA-MD5-Cracker/FPGA/iseconfig/Interface.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/bevans/Desktop/FPGA-MD5-Cracker/FPGA/xilinx/MD5\</ImplementationReportsDirectory>
   <DateInitialized>2016-11-16T19:57:32</DateInitialized>

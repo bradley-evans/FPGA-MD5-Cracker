@@ -8,7 +8,43 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/bevans/Desktop/FPGA-MD5-Cracker/FPGA/Interface_TBW.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/bevans/Desktop/FPGA-MD5-Cracker/FPGA/SPI_Slave.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/bevans/Desktop/FPGA-MD5-Cracker/FPGA/lcd16x2_ctrl.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/bevans/Desktop/FPGA-MD5-Cracker/FPGA/lcd_parser.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/bevans/Desktop/FPGA-MD5-Cracker/FPGA/vhdl/MD5.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/bevans/Desktop/FPGA-MD5-Cracker/FPGA/vhdl/SizeofWord.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/bevans/Desktop/FPGA-MD5-Cracker/FPGA/vhdl/WordMux.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/bevans/Desktop/FPGA-MD5-Cracker/FPGA/vhdl/charAdder.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/bevans/Desktop/FPGA-MD5-Cracker/FPGA/vhdl/compareHash.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/bevans/Desktop/FPGA-MD5-Cracker/FPGA/vhdl/firstCharAdder.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/bevans/Desktop/FPGA-MD5-Cracker/FPGA/vhdl/setupHash.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/bevans/Desktop/FPGA-MD5-Cracker/FPGA/vhdl/setupWord_FirstMD5.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/bevans/Desktop/FPGA-MD5-Cracker/FPGA/vhdl/wordReg.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/bevans/Desktop/FPGA-MD5-Cracker/FPGA/wordAssemble.vhd&quot; into library work</arg>
 </msg>
 
 </messages>
